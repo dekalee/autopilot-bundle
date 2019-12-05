@@ -1,0 +1,49 @@
+{% extends '@WebProfiler/Profiler/layout.html.twig' %}
+
+{% block toolbar %}
+    {% if collector.callCount > 0 %}
+        {% set icon %}
+            <span class="icon"><img src="http://technologyadvice.com/wp-content/uploads/2015/03/Autopilot-logo1.jpg" alt=""/></span>
+        {% endset %}
+
+        {% set text %}
+            <div class="sf-toolbar-info-piece">
+                <b>Api Calls</b>
+                <span class="sf-toolbar-status">
+                    {{ collector.callCount }}
+                </span>
+            </div>
+        {% endset %}
+
+        {{ include('@WebProfiler/Profiler/toolbar_item.html.twig', { 'link': true }) }}
+    {% endif %}
+{% endblock %}
+
+{% block menu %}
+    <span class="label">
+        <span class="icon"><img src="http://technologyadvice.com/wp-content/uploads/2015/03/Autopilot-logo1.jpg" alt=""/></span>
+        <strong>Autopilot</strong>
+        {% if collector.callCount > 0 %}
+            <span class="count">
+                <span>{{ collector.callCount }}</span>
+            </span>
+        {% endif %}
+    </span>
+{% endblock %}
+
+{% block panel %}
+    <h2>Autopilot queries done</h2>
+    <table>
+        <tr>
+            <th>Method</th>
+            <th>Arguments</th>
+        </tr>
+
+        {% for call in collector.data %}
+            <tr>
+                <td>{{ call.method }}</td>
+                <td>{{ dump(call.args) }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+{% endblock %}

@@ -1,0 +1,23 @@
+{
+    "name": "dekalee/autopilot-bundle",
+    "description": "A bundle to wrap the autopilot lib",
+    "type": "symfony-bundle",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Nicolas Thal",
+            "email": "nico.th4l@gmail.com"
+        }
+    ],
+    "require": {
+        "picr/php-autopilothq": "^0.1.5",
+        "jms/aop-bundle": "^1.3",
+        "symfony/http-foundation": "~4.0",
+        "symfony/http-kernel": "~4.0",
+        "symfony/config": "~4.0",
+        "symfony/dependency-injection": "~4.0"
+    },
+    "autoload": {
+        "psr-4": { "Dekalee\\AutopilotBundle\\": "" }
+    }
+}

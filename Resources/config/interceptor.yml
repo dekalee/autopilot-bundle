@@ -1,0 +1,8 @@
+parameters:
+    dekalee_autopilot.interceptor.autopilot_manager.class: Dekalee\AutopilotBundle\Interceptor\AutopilotManagerInterceptor
+
+services:
+    dekalee_autopilot.interceptor.autopilot_manager:
+        class: '%dekalee_autopilot.interceptor.autopilot_manager.class%'
+        arguments:
+            - '@dekalee_autopilot.data_collector.autopilot'

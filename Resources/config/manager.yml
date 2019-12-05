@@ -1,0 +1,11 @@
+parameters:
+    dekalee_autopilot.manager.class: Autopilot\AutopilotManager
+
+services:
+    dekalee_autopilot.manager:
+        class: '%dekalee_autopilot.manager.class%'
+        arguments:
+            - '%dekalee_autopilot.client.api_key%'
+
+    Autopilot\AutopilotManager:
+        alias: dekalee_autopilot.manager

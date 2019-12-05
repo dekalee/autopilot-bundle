@@ -1,0 +1,8 @@
+parameters:
+    dekalee_autopilot.pointcut.autopilot_manager.class: Dekalee\AutopilotBundle\Pointcut\AutopilotManagerPointcut
+
+services:
+    dekalee_autopilot.pointcut.autopilot_manager:
+        class: '%dekalee_autopilot.pointcut.autopilot_manager.class%'
+        tags:
+            - { name: jms_aop.pointcut, interceptor: dekalee_autopilot.interceptor.autopilot_manager }

@@ -1,0 +1,8 @@
+parameters:
+    dekalee_autopilot.data_collector.autopilot.class: Dekalee\AutopilotBundle\DataCollector\AutopilotDataCollector
+
+services:
+    dekalee_autopilot.data_collector.autopilot:
+        class: '%dekalee_autopilot.data_collector.autopilot.class%'
+        tags:
+            - { name: data_collector, template: DekaleeAutopilotBundle:DataCollector:autopilot.html.twig, id: autopilot}
