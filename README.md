@@ -29,7 +29,7 @@ In your `config.yml` file, you should set the provider to pubsub and specify the
 
 ```yaml
     dekalee_autopilot:
-        api_key: '%env(adback_autopilot_apikey)%'
+        api_key: '%env(dekalee_autopilot_apikey)%'
 ```
 
 Usage
