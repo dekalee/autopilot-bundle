@@ -1,9 +1,9 @@
 Dekalee PubSub swarrot
 =====================
 
-[![Latest Stable Version](https://poser.pugx.org/dekalee/pubsub-swarrot-bundle/v/stable)](https://packagist.org/packages/dekalee/pubsub-swarrot-bundle)
-[![Total Downloads](https://poser.pugx.org/dekalee/pubsub-swarrot-bundle/downloads)](https://packagist.org/packages/dekalee/pubsub-swarrot-bundle)
-[![License](https://poser.pugx.org/dekalee/pubsub-swarrot-bundle/license)](https://packagist.org/packages/dekalee/pubsub-swarrot-bundle)
+[![Latest Stable Version](https://poser.pugx.org/dekalee/autopilot-bundle/v/stable)](https://packagist.org/packages/dekalee/autopilot-bundle)
+[![Total Downloads](https://poser.pugx.org/dekalee/autopilot-bundle/downloads)](https://packagist.org/packages/dekalee/autopilot-bundle)
+[![License](https://poser.pugx.org/dekalee/autopilot-bundle/license)](https://packagist.org/packages/dekalee/autopilot-bundle)
 
 This bundle will wrap the [picr-autopilot](https://github.com/dekalee/php-autopilothq) library.
 
